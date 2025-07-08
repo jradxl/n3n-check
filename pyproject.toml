@@ -1,0 +1,27 @@
+[build-system]
+requires = ["uv_build>=0.7.19,<0.8.0"]
+build-backend = "uv_build"
+
+[project]
+name = "n3n-check"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argparse>=1.4.0",
+    "configparser>=7.2.0",
+    "littletable>=3.0.2",
+    "rich>=14.0.0",
+]
+
+[project.scripts]
+n3n-check = "n3n_check.cli:main"
+
+[project.entry-points."pipx.run"]
+n3n-check = "n3n_check.cli:main"
+
+[dependency-groups]
+dev = [
+    "nuitka>=2.7.12",
+]
