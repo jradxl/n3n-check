@@ -12,10 +12,10 @@ There is no release version. You need to build it yourself.
 I find UV very good - https://github.com/astral-sh/uv
 And believe it, this program compiles easily with NUITKA - https://github.com/Nuitka/Nuitka
 
-usage:
-n3-check -h
-n3-check -s
--- this will show the internal catalog of permissable Keys and Datatypes allowed in edge.conf and supernode.conf
+usage:  
+n3-check -h  
+n3-check -s  
+-- this will show the internal catalog of permissable Keys and Datatypes allowed in edge.conf and supernode.conf  
 
 
 //End
